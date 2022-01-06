@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project CSIS 1280</title>
+        <link rel="stylesheet" href="css/style_KGa52199.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <script src="script/script_KGa52199.js"></script>
+    </head>
+    <body>
+
+        <!-- header starts -->
+        <header class="header">
+            <a href="index.html" class="logo">
+                <img class="logo" src="images/logo.jpeg" alt="logo">
+            </a>
+            <nav class="navbar">
+                <a href="page1_KGa52199.html">home</a>
+                <a href="page2_KGa52199.html">about</a>
+                <a href="page3_KGa52199.html">menu</a>
+                <a href="page4_KGa52199.html">products</a>
+                <a href="page5_KGa52199.html">contact</a>
+            </nav>
+            <div class="icons">
+                <div class="fas fa-search" id="search-btn" onclick="search()"></div>
+                <div class="fas fa-shopping-cart" id="cart-btn" onclick="cart(this)"></div>
+            </div>
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="search here...">
+                <label for="search-box" class="fas fa-search"></label>
+            </div>
+            <div class="cart-items-container" id="cart_items">
+                <div class="cart-item">
+                    <span class="fas fa-times"></span>
+                    <img src="images/menu-6.jpeg" alt="cart item 1">
+                    <div class="content">
+                        <h3>cart item 01</h3>
+                        <div class="price">$5.99/-</div>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <span class="fas fa-times"></span>
+                    <img src="images/menu-1.jpeg" alt="cart item 2">
+                    <div class="content">
+                        <h3>cart item 02</h3>
+                        <div class="price">$9.99/-</div>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <span class="fas fa-times"></span>
+                    <img src="images/menu-4.jpeg" alt="cart item 3">
+                    <div class="content">
+                        <h3>cart item 03</h3>
+                        <div class="price">$3.50/-</div>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <span class="fas fa-times"></span>
+                    <img src="images/menu-8.jpeg" alt="cart item 4">
+                    <div class="content">
+                        <h3>cart item 04</h3>
+                        <div class="price">$6.99/-</div>
+                    </div>
+                </div>
+                <a href="#" class="btn">checkout now</a>
+            </div>
+        </header>
+
+        <!-- header ends -->
+
+        <!-- article starts -->
+
+        <article>
+            <section class="formSubmitted">
+                <div class="formSubmittedDiv">
+                    <p class="formP">You have successfully submitted your contacts details, we will contact you soon. Thanks for reaching out.</p>
+                </div>
+            </section>
+            <section class="contact" id="contact">
+                <h1 class="heading"> <span>contact</span> us </h1>
+                <div class="row">
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.7079111837643!2d77.08306606514525!3d28.668463239204556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d046f5339d229%3A0x18b0e115750158!2sGH%2014%2C%20Block%20GH%2014%2C%20Paschim%20Vihar%2C%20Delhi%2C%20110087!5e0!3m2!1sen!2sin!4v1637842944281!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <form action="" method="GET" 
+                    enctype="application/x-www-form-urlencoded">
+                        <h3>get in touch</h3>
+                        <div class="inputBox">
+                            <span class="fas fa-user" for="customerName"></span>
+                            <input type="text" name="customerName" placeholder="name" required>
+                        </div>
+                        <div class="inputBox">
+                            <span class="fas fa-envelope" for="customerEmail"></span>
+                            <input type="email" name="customerEmail" placeholder="email" required>
+                        </div>
+                        <div class="inputBox">
+                            <span class="fas fa-phone" for="customerNumber"></span>
+                            <input type="number" name="customerNumber" placeholder="number" pattern="[0-9]{10}" required>
+                        </div>
+                        <input type="submit" value="contact now" class="btn" onclick="checkValidation(form)">
+                    </form>
+                </div>
+            </section>
+        </article>
+
+        <!-- article ends -->
+
+        <!-- footer starts -->
+
+        <footer>
+            <section class="footer">
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                </div>
+                <div class="links">
+                    <a href="page1_KGa52199.html">home</a>
+                    <a href="page2_KGa52199.html">about</a>
+                    <a href="page3_KGa52199.html">menu</a>
+                    <a href="page4_KGa52199.html">products</a>
+                    <a href="page5_KGa52199.html">contact</a>
+                </div>
+                <div class="credit">copyright &copy; | Fall 2021 | CSIS 1280 |<span> kanishk garg</span> | all rights reserved </div>
+            </section>
+        </footer>
+
+        <!-- footer ends -->
+    </body>
+</html>
